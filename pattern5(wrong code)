@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+
+        // write ur code here
+        int n=scn.nextInt();
+        int j;
+        for(int i=1;i<=n;i++){
+            for(j=1;j<=(n/2)+1;j++){
+                for(int x=(n/2);x>0;x--){
+                    System.out.print("\t");
+                }
+                
+                for(int k=1;k<=2j-1;k++){
+                    System.out.print("*\t");
+                }
+                System.out.println();
+            }
+            
+        }
+
+    }
+}
